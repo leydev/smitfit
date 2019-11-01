@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'Franklin Gothic Demi Cond';
+    src: url(/style/Franklin\ Gothic\ Demi\ Cond.ttf);
+}
+
+:root {
+    --haze-header: 2px;
+    scroll-behavior: smooth;
+}
+
+html, body, article {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #2c2b2b;
+}
+
+#page-h1 {
+    /* Fica com "block" de a imagem do logo falhar */
+    display: none;
+    font-family: 'Franklin Gothic Demi Cond';
+    font-size: 140pt;
+    text-align: center;
+}
+
+.article-haze {
+    transition-duration: .2s;
+    filter: blur(3px);
+}
+
+.mini-logo-site {
+    width: 6rem;
+    height: 2rem;
+    display: none;
+}
+
+.navbar-fixed {
+    position: fixed !important;
+    background-color: #2c2b2b !important;
+}
+
+.page-h2 {
+    font-size: 40pt;
+}
+
+.page-paragraph, .page-paragraph address {
+    font-size: 20pt;
+}
+
+.page-header {
+    width: inherit;
+    height: inherit;
+    background-color: #2c2b2b;
+}
+
+.background-header {
+    background-image: url('/image/IMG_7190.JPG');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    -webkit-filter: blur(var(--haze-header));
+    -moz-filter: blur(var(--haze-header));
+    -o-filter: blur(var(--haze-header));
+    -ms-filter: blur(var(--haze-header));
+    filter: blur(var(--haze-header));
+    overflow: hidden;
+}
+
+.background-header video {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.3, 2);
+    -webkit-transform: scale(1.3, 2);
+    -moz-transform: scale(1.3, 2);
+}
+
+.page-header>div {
+    width: inherit;
+    height: inherit;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: #2c2b2b;
+}
+
+.page-section {
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    padding: 3rem 5rem;
+}
+
+.page-footer {
+    width: inherit;
+    height: inherit;
+    background-color: #2c2b2b;
+}
+
+#A-academia {
+    background-color: #2c2b2b;
+}
+
+#Horario-de-funcionamento {
+    background-color: #20773c;
+}
+
+#Horario-de-funcionamento .container-fluid, #Horario-de-funcionamento .container-fluid .row, #Horario-de-funcionamento .container-fluid .row .col {
+    height: 100%;
+}
+
+#Como-chegar {
+    background-color: #00203c;
+}
+
+#Como-chegar .container-fluid, #Como-chegar .container-fluid .row, #Como-chegar .container-fluid .row .col {
+    height: 100%;
+}
+
+.page-footer .container-fluid, .page-footer .container-fluid .row, .page-footer .container-fluid .row .col {
+    height: inherit;
+}
+
+.stiker-note {
+    background-image: linear-gradient(140deg, #ffffff 80%, #eecd2f 20%);
+    padding: 2rem 2rem 2rem 0rem;
+    display: inline-block;
+    border: solid white 1rem;
+}
+
+.stiker-note ol {
+    list-style: none;
+    padding: 0;
+    font-size: 20pt;
+}
+
+.logo-footer {
+    width: 30rem;
+    font-size: 80pt;
+    font-family: 'Franklin Gothic Demi Cond';
+    text-align: center;
+    color: white;
+}
+
+.carousel-item {
+    background-color: #676767;
+    height: 66vh;
+    text-align: center;
+}
+
+.navbar-mobile {
+    position: fixed;
+    width: 18rem !important;
+    background-color: #373737;
+    z-index: 99;
+    display: none;
+    height: 100%;
+    left: -18rem;
+    transition-duration: .5s;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.navbar-mobile-open {
+    left: 0;
+    box-shadow: 0px 6px 8px 5px black;
+    transition-duration: .5s;
+}
+
+.navbar-mobile .container-fluid {
+    height: 100%;
+}
+
+.header-navbar-mobile {
+    display: inline-block;
+    width: 100%;
+    border-bottom: solid #2c2b2b;
+}
+
+.header-navbar-mobile .close span {
+    font-size: 3rem;
+    font-weight: 100;
+    color: white;
+}
+
+.maps-iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#Sobre-a-equipe {
+    background-color: #ffffff;
+}
+
+#Sobre-a-equipe .container-fluid, #Sobre-a-equipe .container-fluid .row, #Sobre-a-equipe .container-fluid .row {
+    width: 100%;
+    height: 100%;
+}
+
+#Sobre-a-equipe .container-fluid .row {
+    height: 100%;
+}
+
+#audioVideo {
+    background: #000000a1;
+    border: unset;
+    width: 58px;
+    border-radius: 50%;
+    height: 58px;
+    box-shadow: 0px 1px 64px 31px black;
+    right: 1%;
+    bottom: 2%;
+    outline: unset;
+    position: absolute;
+}
+
+#audioVideo img {
+    width: 100%;
+    height: 100%;
+}
+
+.info-dev {
+    color: white;
+}
+
+.info-dev address {
+    margin: 0;
+    font-family: monospace;
+    text-align: -webkit-right;
+}
+.img-equipe{
+    --size: 250px;
+    width: var(--size);
+    height: var(--size);
+}
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .page-header {
+        height: 75%;
+    }
+    .logo-header {
+        width: 320px;
+    }
+    .background-header {
+        background-position-x: right;
+    }
+    .page-section {
+        padding: 3rem 0rem;
+    }
+    .page-h2 {
+        font-size: 2rem;
+    }
+    .page-paragraph, .page-paragraph address {
+        font-size: 1.2rem;
+    }
+    #Horario-de-funcionamento .container-fluid, #Horario-de-funcionamento .container-fluid .row {
+        height: 100%;
+    }
+    #Horario-de-funcionamento .container-fluid .row .col {
+        height: 50%;
+    }
+    .stiker-note {
+        padding: 1rem 2rem 1rem 0rem;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+    .stiker-note ol {
+        font-size: 16pt;
+    }
+    #Como-chegar .container-fluid, #Como-chegar .container-fluid .row {
+        height: 100%;
+    }
+    #Como-chegar .container-fluid .row .col:nth-child(1) {
+        height: 20%;
+    }
+    #Como-chegar .container-fluid .row .col div {
+        margin: 0 !important;
+    }
+    #Como-chegar .container-fluid .row .col:nth-child(2) {
+        height: 80%;
+    }
+    address.page-paragraph {
+        display: none;
+    }
+    .page-footer .container-fluid, .page-footer .container-fluid .row {
+        height: 100%;
+    }
+    .page-footer .container-fluid .row .col:nth-child(1) {
+        height: 75%;
+    }
+    .page-footer .container-fluid .row .col:nth-child(1) div {
+        margin: 0 !important;
+    }
+    .page-footer .container-fluid .row .col:nth-child(2) {
+        display: none !important;
+    }
+    .page-footer .container-fluid .row .col:nth-child(3) {
+        height: 25%;
+    }
+    .logo-footer {
+        width: 17rem;
+    }
+    .carousel-item {
+        background-color: #676767;
+        height: 16rem;
+        text-align: center;
+    }
+    #A-academia {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-mobile {
+        display: block;
+    }
+    .maps-iframe {
+        width: 25rem;
+        height: 100%;
+    }
+    #Sobre-a-equipe {
+        height: auto;
+    }
+    #site-navbar {
+        background: transparent;
+    }
+    #audioVideo {
+        width: 48px;
+        height: 48px;
+        right: 4%;
+        bottom: 27%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo-header {
+        width: 320px;
+    }
+    .background-header {
+        background-position-x: right;
+    }
+    .page-section {
+        padding: 3rem 0rem;
+        height: 150% !important;
+    }
+    .page-h2 {
+        font-size: 2rem;
+    }
+    .page-paragraph, .page-paragraph address {
+        font-size: 1.2rem;
+    }
+    #Horario-de-funcionamento .container-fluid, #Horario-de-funcionamento .container-fluid .row {
+        height: 100%;
+    }
+    #Horario-de-funcionamento .container-fluid .row .col {
+        height: 50%;
+    }
+    .stiker-note {
+        padding: 1rem 2rem 1rem 0rem;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+    .stiker-note ol {
+        font-size: 12pt;
+    }
+    #Como-chegar .container-fluid, #Como-chegar .container-fluid .row {
+        height: 100%;
+    }
+    #Como-chegar .container-fluid .row .col:nth-child(1) {
+        height: 20%;
+    }
+    #Como-chegar .container-fluid .row .col div {
+        margin: 0 !important;
+    }
+    #Como-chegar .container-fluid .row .col:nth-child(2) {
+        height: 80%;
+    }
+    address.page-paragraph {
+        display: none;
+    }
+    .page-footer .container-fluid, .page-footer .container-fluid .row {
+        height: 100%;
+    }
+    .page-footer .container-fluid .row .col:nth-child(1) {
+        height: 75%;
+    }
+    .page-footer .container-fluid .row .col:nth-child(1) div {
+        margin: 0 !important;
+    }
+    .page-footer .container-fluid .row .col:nth-child(2) {
+        display: none !important;
+    }
+    .page-footer .container-fluid .row .col:nth-child(3) {
+        height: 25%;
+    }
+    .logo-footer {
+        width: 17rem;
+    }
+    .carousel-item {
+        background-color: #676767;
+        height: 16rem;
+        text-align: center;
+    }
+    #A-academia {
+        display: flex;
+        align-items: center;
+    }
+    .navbar-mobile {
+        display: block;
+    }
+    .maps-iframe {
+        width: 100rem;
+        height: 100%;
+    }
+    .page-footer {
+        height: 140%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-mobile {
+        display: block;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}

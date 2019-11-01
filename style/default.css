@@ -56,7 +56,7 @@ body {
 }
 
 .background-header {
-    background-image: url('/image/IMG_7190.JPG');
+    background-image: url('image/IMG_7190.JPG');
     background-attachment: fixed;
     background-size: 100% 100%;
     -webkit-filter: blur(var(--haze-header));
